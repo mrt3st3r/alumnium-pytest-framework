@@ -3,7 +3,6 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Alumnium](https://img.shields.io/badge/alumnium-0.12.0-green.svg)](https://pypi.org/project/alumnium/)
 
-A comprehensive test automation framework leveraging **Alumnium** for AI-powered browser testing with natural language commands. This project demonstrates how to write maintainable, readable tests using both Selenium and Playwright drivers.
 
 ## 🚀 Features
 
@@ -25,7 +24,7 @@ A comprehensive test automation framework leveraging **Alumnium** for AI-powered
 
 ```bash
 git clone <repository-url>
-cd alumnium
+cd alumnium-pytest-framework
 ```
 
 ### 2. Set Up Virtual Environment
