@@ -16,7 +16,7 @@ def al():
     browser.close()
     playwright.stop()
 
-def test_complete_all_todos(al):
+def test_search_with_playwright_pytest(al):
     al.do("type 'selenium' into the search field, then press 'Enter'")
     al.check("page title contains selenium")
     al.check("search results contain selenium.dev")

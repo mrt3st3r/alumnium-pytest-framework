@@ -80,11 +80,11 @@ Execute the Selenium-based test example:
 python test_selenium.py
 ```
 
-This test will:
-- Navigate to https://www.joanmedia.dev/
-- Click on the "conferences" section
-- Verify conference listings
-- Extract and display conference information
+This test demonstrates:
+- Navigating to duckduckgo.com
+- Searchin Selenium in the search
+- Verifying the page title and results
+- Verification using natural language assertions
 
 ### Running Playwright Tests
 
@@ -120,14 +120,17 @@ def al():
     playwright = sync_playwright().start()
     browser = playwright.chromium.launch(headless=False)
     page = browser.new_page()
-    page.goto("https://todomvc.com/examples/vue/dist/#/")
+    page.goto("https://duckduckgo.com")
     alumni = Alumni(page)
     yield alumni
     browser.close()
     playwright.stop()
 
-def test_complete_all_todos(al):
-    al.do("add 'buy some milk' to the todo list")
+def test_search_with_playwright_pytest(al):
+    al.do("type 'selenium' into the search field, then press 'Enter'")
+    al.check("page title contains selenium")
+    al.check("search results contain selenium.dev")
+    assert al.get("atomic number") == 34
 ```
 
 ## 📁 Project Structure
