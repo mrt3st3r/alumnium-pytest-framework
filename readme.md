@@ -1,4 +1,4 @@
-# Alumnium Test Automation Framework
+# Alumnium Test Automation Framework with Pytest
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Alumnium](https://img.shields.io/badge/alumnium-0.12.0-green.svg)](https://pypi.org/project/alumnium/)
