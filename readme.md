@@ -95,20 +95,20 @@ pytest test_playwright.py
 ```
 
 This test demonstrates:
-- TodoMVC application testing
-- Adding multiple todo items
-- Bulk task completion
-- State verification using natural language assertions
+- Navigating to duckduckgo.com
+- Searchin Selenium in the search
+- Verifying the page title and results
+- Verification using natural language assertions
 
 ### Test Structure
 
 #### Selenium Example (`test_selenium.py`)
 ```python
-# Simple script demonstrating Alumnium with Selenium WebDriver
-al = Alumni(driver)
-al.do("click on 'conferences'")
-al.check("conference list contain PyCon US 2025")
-conferences = al.get('list of conferences')
+# Simple script demonstrating Alumnium with Selenium WebDriver using pytest fixture
+ al.do("type 'selenium' into the search field, then press 'Enter'")
+ al.check("page title contains selenium")
+ al.check("search results contain selenium.dev")
+ assert al.get("atomic number") == 34
 ```
 
 #### Playwright Example (`test_playwright.py`)
