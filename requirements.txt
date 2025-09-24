@@ -1,0 +1,2 @@
+alumnium==0.13.0
+pytest-playwright==0.7.1
